@@ -1,20 +1,17 @@
 {% extends '../base.html' %}
-{% load crispy_forms_tags %}
 {% block content %}
+{% load crispy_forms_tags %}
 
-        <div class="row">
-          <div class="col-md-8 offset-md-2">
+          <div class="col-md-6 offset-md-3">
             <form method="POST" class="post-form">
               {% csrf_token %}
             <div class="card">
-              <h5 class="card-header">Cadastro Visitante</h5>
+              <h5 class="card-header">Login</h5>
               <div class="card-body">
-                <h5 class="card-title">Preencha os campos:</h5>
                 <p class="card-text">{{form|crispy }}</p>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary">Entrar</button>
               </div>
             </div>
               </form>
           </div>
-        </div>
 {% endblock %}

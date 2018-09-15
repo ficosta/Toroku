@@ -5,5 +5,6 @@ from . import views
 app_name = 'cadastro'
 urlpatterns = [
     # post views
-    path('', views.cadastro, name='cadastro'),
+    path('cadastro/', views.cadastro, name='cadastro'),
+    path('', views.home, name='home'),
 ]
