@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cadastro.apps.CadastroConfig',
     'crispy_forms',
+    'rest_framework',
+    'api.apps.ApiConfig',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
