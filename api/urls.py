@@ -5,5 +5,6 @@ from . import views
 app_name = 'api'
 urlpatterns = [
     # post views
-    path('print/', views.PrintViewSet.as_view(), name='print'),
+    path('print/', views.Print, name='print'),
+    path('print/<int:pk>/', views.PrintVisitante, name='print'),
 ]

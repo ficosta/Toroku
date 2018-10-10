@@ -21,3 +21,4 @@ class Visitante(models.Model):
     sexo = models.PositiveSmallIntegerField(choices=SEXO_CHOICES, default=0)
     tipo = models.PositiveSmallIntegerField(choices=TIPO_CHOICES, default=0)
     CodigoBarra = models.CharField('Crachá',max_length=50, blank=True)
+    impresso = models.BooleanField(default=False)

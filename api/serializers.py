@@ -5,4 +5,4 @@ from rest_framework import serializers
 class VisitanteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Visitante
-        fields = '__all__'
+        fields = ('id','nome','telefone','impresso')
