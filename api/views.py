@@ -7,7 +7,7 @@ from api.serializers import VisitanteSerializer
 
 @api_view(['GET'])
 def Print(request):
-    queryset = Visitante.objects.all()
+    queryset = Visitante.objects.filter(impresso=False)
     serializer = VisitanteSerializer(queryset, many=True)
     return Response(serializer.data)
 
