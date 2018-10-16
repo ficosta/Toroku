@@ -25,7 +25,7 @@ SECRET_KEY = 'k$dfnud0ajnzninr!cx9d7xhcchaos%vp**qdk$s+yh7a54+3&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['toroku.tk','142.93.188.236','127.0.0.1']
+ALLOWED_HOSTS = ['192.168.1.39',''toroku.tk','142.93.188.236','127.0.0.1']
 
 
 # Application definition
